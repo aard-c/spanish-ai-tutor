@@ -1,0 +1,22 @@
+# FastAPI backend
+fastapi
+uvicorn
+
+# Database (PostgreSQL + async)
+sqlalchemy>=2.0
+asyncpg
+
+# Data validation
+pydantic
+
+# Environment & config
+python-dotenv
+
+# HTTP client (for calling LLM APIs)
+httpx
+
+# AI / LLM integration
+openai
+
+# Utilities
+typing-extensions
