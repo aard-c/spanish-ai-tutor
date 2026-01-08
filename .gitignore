@@ -1,0 +1,3 @@
+backend/**/*.pyc
+_pycache_/**/*.pyc
+db.sql
