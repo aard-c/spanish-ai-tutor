@@ -2,3 +2,4 @@ backend/**/*.pyc
 _pycache_/**/*.pyc
 db.sql
 backend/**/*db_info.py
+.env

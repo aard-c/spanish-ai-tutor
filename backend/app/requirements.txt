@@ -20,3 +20,7 @@ openai
 
 # Utilities
 typing-extensions
+
+# Gemini dependicies
+google-generativeai
+python-dotenv
