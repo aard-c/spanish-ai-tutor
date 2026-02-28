@@ -24,3 +24,8 @@ typing-extensions
 # Gemini dependicies
 google-generativeai
 python-dotenv
+
+# Frontend dependicies
+npm install axios react-router-dom recharts
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p

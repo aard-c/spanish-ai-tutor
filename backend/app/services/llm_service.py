@@ -20,12 +20,23 @@ def call_llm(sentence: str) -> dict:
     Sentence:
     {sentence}
     """
-
-    response = model.generate_content(full_prompt)
-
-    text = response.text
-
-    # Clean markdown formatting if present
-    json_text = re.sub(r"```json|```", "", text).strip()
-
-    return json.loads(json_text)
+    try:   
+        response = model.generate_content(full_prompt)
+        text = response.text
+        json_text = re.sub(r"```json|```", "", text).strip()
+        return json.loads(json_text)\
+    
+    except Exception as e:
+        print("Gemini Error: ", e)
+        
+        return {
+            "is correct": False,
+            "original_sentence": sentence,
+            "corrected_sentence": sentence,
+            "grammar_topic": "present tense",
+            "explanation": "AI service temporarily unavailable"  
+            
+        }
+        
+        
+    
